@@ -16,7 +16,7 @@ use super::ProcessAction;
 use crate::network::message::Signal as InternalSignal;
 
 pub fn compile_shell_command(command_string: &str) -> Command {
-    let mut command = Command::new("sh");
+    let mut command = Command::new("nu");
     command.arg("-c").arg(command_string);
 
     command
